@@ -29,7 +29,11 @@ class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
     return Center(
+        child: FlatButton(
+      onPressed: () {
+        print('pressed');
+      },
       child: Image.asset('images/ball1.png'),
-    );
+    ));
   }
 }
